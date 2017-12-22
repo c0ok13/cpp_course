@@ -9,3 +9,4 @@ find_package(JPEG REQUIRED)
 find_package(SFML 2 COMPONENTS window graphics system REQUIRED)
 
 add_subdirectory(worcshop 1.2)
+add_subdirectory(worcshop 1.3)
