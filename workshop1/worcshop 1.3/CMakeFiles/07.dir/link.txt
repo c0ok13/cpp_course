@@ -1,3 +1,0 @@
-C:\CppDistro\cmake\bin\cmake.exe -E remove -f CMakeFiles\07.dir/objects.a
-C:\CppDistro\MinGW\bin\ar.exe cr CMakeFiles\07.dir/objects.a @CMakeFiles\07.dir\objects1.rsp
-C:\CppDistro\MinGW\bin\g++.exe    -Wl,--whole-archive CMakeFiles\07.dir/objects.a -Wl,--no-whole-archive  -o 07.exe -Wl,--out-implib,lib07.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\07.dir\linklibs.rsp
