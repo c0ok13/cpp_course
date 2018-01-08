@@ -77,7 +77,10 @@ void pollEvents(sf::RenderWindow &window, sf::Vector2f &mousePosition, sf::Sprit
 void redrawFrame(sf::RenderWindow &window, sf::Sprite &cat, sf::Sprite &point)
 {
     window.clear(sf::Color(255, 255, 255));
-    window.draw(point);
+    if (cat.getPosition() != point.getPosition())
+    {
+        window.draw(point);
+    }
     window.draw(cat);
     window.display();
 }
