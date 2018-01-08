@@ -31,7 +31,6 @@ void updateEyeElements(Eye &Eye)
 {
     const sf::Vector2f headOffset = toEuclidean(10, 30, Eye.rotation);
     Eye.pupil.setPosition(Eye.position + headOffset);
-    /* Eye.pupil.setRotation(toDegrees(Eye.rotation));*/
 }
 // Инициализирует фигуру-стрелку
 void initEye(Eye &Eye, float posX, float posY)
