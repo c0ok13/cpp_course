@@ -133,6 +133,8 @@ int main()
     sf::Vector2f mousePosition;
 
     initArrow(arrow);
+
+    mousePosition = arrow.getPosition();
     while (window.isOpen())
     {
         const float dt = clock.restart().asSeconds();
