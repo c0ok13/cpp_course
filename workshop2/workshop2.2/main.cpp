@@ -124,7 +124,7 @@ int main()
     ball balls[5];
     sf::Color Collor[5] = {{125, 125, 125}, {255, 0, 255}, {255, 0, 0}, {0, 0, 255}, {0, 255, 0}};
     sf::Vector2f speed[5] = {{20.f, 80.f}, {10, 30.f}, {50.f, 5.f}, {30.f, 30.f}, {100.f, 1.f}};
-    sf::Vector2f position[5] = {{20.f, 80.f}, {40.f, 200.f}, {50.f, 500.f}, {400.f, 400.f}, {300.f, 500.f}};
+    sf::Vector2f position[5] = {{100.f, 80.f}, {40.f, 200.f}, {50.f, 500.f}, {400.f, 400.f}, {300.f, 500.f}};
     initBall(balls[0], Collor[0], speed[0], position[0]);
     initBall(balls[1], Collor[1], speed[1], position[1]);
     initBall(balls[2], Collor[2], speed[2], position[2]);
