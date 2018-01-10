@@ -35,14 +35,13 @@ void checkBall(ball (&balls)[ballsCount])
             if (distance < BALL_RADIUS * 2)
             {
                 sf::Vector2f postSpeedVect = balls[fi].speed - balls[si].speed;
-                float posDist = std::hypot(distVect.x, distVect.y);
 
-                balls[fi].speed = balls[fi].speed - (postSpeedVect.x * distVect.x + postSpeedVect.y * distVect.y) / (posDist * posDist) * distVect;
+                balls[fi].speed = balls[fi].speed - (postSpeedVect.x * distVect.x + postSpeedVect.y * distVect.y) / (distance * distance) * distVect;
 
                 distVect = -distVect;
                 postSpeedVect = -postSpeedVect;
 
-                balls[si].speed = balls[si].speed - (postSpeedVect.x * distVect.x + postSpeedVect.y * distVect.y) / (posDist * posDist) * distVect;
+                balls[si].speed = balls[si].speed - (postSpeedVect.x * distVect.x + postSpeedVect.y * distVect.y) / (distance * distance) * distVect;
             }
         }
     }
