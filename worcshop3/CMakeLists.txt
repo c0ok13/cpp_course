@@ -10,3 +10,4 @@ find_package(SFML 2 COMPONENTS window graphics system REQUIRED)
 
 
 add_subdirectory(worcshop3.1.1)
+add_subdirectory(worcshop3.3)
