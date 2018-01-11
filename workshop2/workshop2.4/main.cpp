@@ -7,13 +7,7 @@
 #include <cassert>
 #include <ctime>
 #include <random>
-// Структура хранит фигуры, составляющие стрелку, а также
-//  позицию и поворот стрелки.
-// После изменения позиции или поворота надо вызвать
-//  функцию updateArrowElements, чтобы стрелка оставалась
-//  в согласованном состоянии.
 
-// Инициализирует фигуру-стрелку
 constexpr unsigned BALL_RADIUS = 30;
 constexpr size_t ballsCount = 5;
 
